@@ -9,7 +9,7 @@ import '../styles/todos.css';
 type FilterType = 'all' | 'active' | 'completed';
 
 export function TodoApp() {
-  const { todos, addTodo, toggleTodo, updateTodo, clearCompleted, isLoaded } = useTodos();
+  const { todos, addTodo, toggleTodo, updateTodo, clearCompleted } = useTodos();
   const [filter, setFilter] = useState<FilterType>('all');
 
   if (!isLoaded) {
