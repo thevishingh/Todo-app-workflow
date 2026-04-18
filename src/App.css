@@ -53,11 +53,13 @@ button {
 }
 
 
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .some-class {
     border-right: none;
     border-bottom: 1px solid var(--border);
   }
 }
+
 
 #next-steps ul {
   list-style: none;
