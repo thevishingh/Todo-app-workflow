@@ -12,10 +12,6 @@ export function TodoApp() {
   const { todos, addTodo, toggleTodo, updateTodo, clearCompleted } = useTodos();
   const [filter, setFilter] = useState<FilterType>('all');
 
-  if (!isLoaded) {
-    return <div className="loading">Loading...</div>;
-  }
-
   const completedCount = todos.filter(t => t.completed).length;
   const activeCount = todos.filter(t => !t.completed).length;
   const hasCompleted = completedCount > 0;
